@@ -8,7 +8,7 @@ const reverseString = function(string) {
     // //.reverse() reverses the order of an array and returns a reversed array
     // //.join("") joins the reversed array 
      const reversedString = splitStringArray.reverse().join("");
-    // return reversedString;
+    return reversedString;
 
 };
 // console.log(reverseString("hello there"))
