@@ -1,4 +1,5 @@
-const leapYears = function() {
+//Declare function that takes a year parameter
+const leapYears = function(year) {
 
 };
 
