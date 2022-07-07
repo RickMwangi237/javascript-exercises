@@ -12,11 +12,18 @@ const ftoc = function(f) {
 };
 ftoc(-100)
 
-// Declare a function with parameter f for c for celcius
-const ctof = function() {
+// Declare a function with parameter c for celcius
+const ctof = function(c) {
+  let degFarenheit =  c * 9/5 + 32;
+  console.log(degFarenheit);
 
+  // Add if statement to check if variable is whole number or fraction
+  if (degFarenheit - Math.floor(degFarenheit) !== 0){
+    return  Number(degFarenheit.toFixed(1));
+  } else {return degFarenheit};
 };
 
+ctof(100)
 // Do not edit below this line
 module.exports = {
   ftoc,
