@@ -1,6 +1,7 @@
 // Declare a function that with parameter farenheit
 const ftoc = function(f) {
-  // let degCelcius = (f-32) * 5/ 9;
+  // Declare a variable that with formula for farenheit to celcius as it's value 
+  let degCelcius = (f-32) * 5/ 9;
   // console.log(degCelcius);
 
   // if (degCelcius - Math.floor(degCelcius) !== 0){
