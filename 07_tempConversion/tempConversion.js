@@ -12,6 +12,7 @@ const ftoc = function(f) {
 };
 ftoc(-100)
 
+// Declare a function with parameter f for c for celcius
 const ctof = function() {
 
 };
