@@ -11,9 +11,11 @@ const palindromes = function (string) {
     }  
 
 //  console.log(splitStringArray);
-
-//     const splitString = splitStringArray.join("");
-//     const reverseString = splitStringArray.reverse().join("");
+    
+    //use .join to return a string of joined array items
+    const splitString = splitStringArray.join("");
+    //use .reverse() to reverse the order of array items and .join to join elements into a string in reversed order
+    const reverseString = splitStringArray.reverse().join("");
 
 //     if (splitString === reverseString){
 //         console.log(true);
