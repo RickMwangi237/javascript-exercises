@@ -1,5 +1,6 @@
 //Declare a funtion that takes a string parameter
 const palindromes = function (string) {
+    
     //Use .split to create an array of split sub string elements
     let splitStringArray = string.split("");
 
@@ -17,14 +18,16 @@ const palindromes = function (string) {
     //use .reverse() to reverse the order of array items and .join to join elements into a string in reversed order
     const reverseString = splitStringArray.reverse().join("");
 
-//     if (splitString === reverseString){
-//         console.log(true);
-//         return false;
-//     } else {
-//         console.log(false);
-//         return false;
-//     }
+
+
+    if (splitString === reverseString){
+        console.log(true);
+        return false;
+    } else {
+        console.log(false);
+        return false;
+    }
   };
-// palindromes("racecar")
+ palindromes("racecar")
 // // Do not edit below this line
 // module.exports = palindromes;
