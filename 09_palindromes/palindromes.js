@@ -4,11 +4,11 @@ const palindromes = function (string) {
     let splitStringArray = string.split("");
 
      //Use for loop to remove blank space from array
-    // for (let element of splitStringArray){
-    //     if (element === " "){
-    //         splitStringArray.splice(splitStringArray.indexOf(element),1)
-    //     }
-    // }  
+    for (let element of splitStringArray){
+        if (element === " "){
+            splitStringArray.splice(splitStringArray.indexOf(element),1)
+        }
+    }  
 
 //  console.log(splitStringArray);
 
