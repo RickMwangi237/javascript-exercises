@@ -1,33 +1,37 @@
-//Declare a funtion that takes a string parameter
 const palindromes = function (string) {
-    
-    //Use .split to create an array of split sub string elements
-    let splitStringArray = string.split("");
+    const splitStringArray = string.split("");
+    //console.log(splitStringArray);
+    const toRemove = ".?\!,:;-[]{}();\"' ";
+    //console.log(toRemove)
+    const toRemoveArray = toRemove.split("")
+    //console.log(toRemoveArray);
 
-     //Use for loop to remove blank space from array
-    for (let element of splitStringArray){
-        if (element === " "){
-            splitStringArray.splice(splitStringArray.indexOf(element),1)
+    for(let element of splitStringArray){
+        //console.log(element);
+        if (toRemoveArray.indexOf(element) === -1){
+            //console.log(splitStringArray);
+        } else if (toRemoveArray.indexOf(element) !== -1){
+           splitStringArray.splice(splitStringArray.indexOf(element),1);
+           //console.log(splitStringArray) ;
         }
-    }  
+    };
+    //console.log(splitStringArray);
 
-//  console.log(splitStringArray);
-    
-    //use .join to return a string of joined array items
-    const splitString = splitStringArray.join("");
-    //use .reverse() to reverse the order of array items and .join to join elements into a string in reversed order
-    const reverseString = splitStringArray.reverse().join("");
+    let joinedStringArray = splitStringArray.join("");
+    //console.log(joinedStringArray);
 
+    let reverseString = splitStringArray.reverse().join("");
+    console.log(reverseString);
 
-
-    if (splitString === reverseString){
+    if (joinedStringArray.toLowerCase() === reverseString.toLowerCase()){
         console.log(true);
-        return false;
+        return true;
     } else {
         console.log(false);
         return false;
     }
-  };
- palindromes("racecar")
-// // Do not edit below this line
-// module.exports = palindromes;
+
+};
+ palindromes("racecar!")
+// Do not edit below this line
+module.exports = palindromes;
