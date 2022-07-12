@@ -12,9 +12,9 @@ const books = [
 
  //Declare a function that takes the  books array as a parameter
 const getTheTitles = function(books) {
-//      const titlesArray = [];
-//      const allBooks = {};
 
+   //initiate array to hold book titles
+      const titlesArray = [];
 
 //      for (let book of books){
 //         titlesArray.push(book.title)
