@@ -10,7 +10,8 @@ const books = [
    }
  ];
 
-// const getTheTitles = function(books) {
+ //Declare a function that takes the  books array as a parameter
+const getTheTitles = function(books) {
 //      const titlesArray = [];
 //      const allBooks = {};
 
@@ -19,7 +20,7 @@ const books = [
 //         titlesArray.push(book.title)
 //      }
 //      console.log(titlesArray)
-// };
+ };
 
 //  getTheTitles(books)
 
