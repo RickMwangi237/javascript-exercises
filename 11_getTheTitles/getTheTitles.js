@@ -20,7 +20,7 @@ const getTheTitles = function(books) {
      for (let book of books){
         titlesArray.push(book.title)
      }
-     console.log(titlesArray)
+     return(titlesArray);
  };
 
 //  getTheTitles(books)
