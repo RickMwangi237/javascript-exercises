@@ -15,11 +15,12 @@ const getTheTitles = function(books) {
 
    //initiate array to hold book titles
       const titlesArray = [];
-
-//      for (let book of books){
-//         titlesArray.push(book.title)
-//      }
-//      console.log(titlesArray)
+   
+   //Add for loop to push the title value for all books in books array to titlesArray
+     for (let book of books){
+        titlesArray.push(book.title)
+     }
+     console.log(titlesArray)
  };
 
 //  getTheTitles(books)
